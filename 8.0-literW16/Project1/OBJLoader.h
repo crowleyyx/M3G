@@ -1,10 +1,27 @@
 #pragma once
-#include <GLFW\glfw3.h>
-#include <GLFW\glfw3native.h>
+#include "Object.h"
 
 
-class OBJLoader
+
+class OBJLoader:Object
 {
+
+public:
+
+	OBJLoader(string PATH);
+	~OBJLoader();
+
+
+private:
+	void OpenObj();
+
+
+
+
+private:
+	std::string m_sPATH;
 	
+
+
 };
 

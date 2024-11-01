@@ -1,5 +1,4 @@
-#include <GLFW\glfw3.h>
-#include <GLFW\glfw3native.h>
+#include "OBJLoader.h"
 
 int main()
 {
@@ -17,6 +16,8 @@ int main()
         return -1;
     }
 
+    OBJLoader test("Assets\\Test.obj");
+    
     // Make the window's context current
     glfwMakeContextCurrent(window);
 
@@ -27,7 +28,7 @@ int main()
         glfwPollEvents();
 
         glClear(GL_COLOR_BUFFER_BIT);
-
+      
         // Draw a triangle
         glBegin(GL_TRIANGLES);
         glVertex2f(-0.5f, -0.5f);
