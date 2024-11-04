@@ -11,7 +11,7 @@ using namespace std;
 
 class Object
 {
-
+public:
 	struct Indices {
 
 		int index;
@@ -37,6 +37,10 @@ class Object
 		float y;
 		float z;
 	};
+
+public:
+
+	vector<vertexPosition> VertexCoord;
 
 	
 

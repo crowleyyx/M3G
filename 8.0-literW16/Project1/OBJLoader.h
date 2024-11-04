@@ -13,13 +13,17 @@ public:
 
 
 private:
-	void OpenObj();
+	void FindVertexPosition();
 
 
 
 
 private:
-	std::string m_sPATH;
+	string m_sPATH;
+	string currentLine;
+	Object myObject;
+	
+
 	
 
 
