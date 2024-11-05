@@ -12,7 +12,7 @@ public:
 	~OBJLoader();
 
 
-private:
+public:
 	void FindVertexPosition();
 
 

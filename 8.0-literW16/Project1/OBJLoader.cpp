@@ -2,17 +2,17 @@
 
 
 
-OBJLoader::OBJLoader(string PATH) {
-	m_sPATH = PATH;
+OBJLoader::OBJLoader(string PATH): 
+	m_sPATH(PATH)
+{
 };
 
-OBJLoader::~OBJLoader(){
-
-};
+OBJLoader::~OBJLoader(){};
 
 
 void OBJLoader::FindVertexPosition()
 {
+
 	if (currentLine[0] == 'v' && currentLine[1] != 't' && currentLine[0] != 'n')
 	{
 		
@@ -28,7 +28,7 @@ void OBJLoader::FindVertexPosition()
 		tempPosition.z = stof(currentLine.substr(yEnd + 1, zEnd));
 
 		myObject.VertexCoord.push_back(tempPosition);
-			
+		
 	}
 
 

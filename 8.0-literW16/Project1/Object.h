@@ -1,6 +1,6 @@
 #pragma once
-#include <GLFW\glfw3.h>
-#include <GLFW\glfw3native.h>
+#include <glfw3.h>
+#include <glfw3native.h>
 #include <iostream>
 #include <vector>
 #include <string>
@@ -11,7 +11,7 @@ using namespace std;
 
 class Object
 {
-public:
+protected:
 	struct Indices {
 
 		int index;
