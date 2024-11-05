@@ -14,7 +14,8 @@ public:
 
 public:
 	void FindVertexPosition();
-
+	void FindTextureCoord();
+	void FindVertexNormal();
 
 
 

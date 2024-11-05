@@ -40,7 +40,10 @@ protected:
 
 public:
 
-	vector<vertexPosition> VertexCoord;
+	vector<vertexPosition>		vVertexCoord;
+	vector<textureCoord>		vTextureCoord;
+	vector<Indices>				vIndices;
+	vector<vertexNormal>		vVertexNormal;
 
 	
 
