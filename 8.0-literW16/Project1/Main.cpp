@@ -16,8 +16,8 @@ int main()
         return -1;
     }
 
-    OBJLoader test("..\\Assets\\Test.obj");
-	test.FindVertexPosition();
+    OBJLoader test("C:\\tema\\M3G\\8.0-literW16\\Assets\\Test.obj");
+	
     // Make the window's context current
     glfwMakeContextCurrent(window);
 

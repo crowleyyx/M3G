@@ -1,12 +1,12 @@
-# Blender 3.6.12 MTL File: 'None'
+# Blender 4.1.0 MTL File: 'None'
 # www.blender.org
 
-newmtl Material
+newmtl Material.001
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 2
+Ks 0.665354 0.665354 0.665354
+Ke 0.100000 0.100000 0.100000
+Ni 1.500000
+d 0.385827
+illum 9
+map_Kd C:/Users/su-1101/Documents/Untitle111d.png

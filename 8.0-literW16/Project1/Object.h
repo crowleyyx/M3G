@@ -14,7 +14,10 @@ class Object
 protected:
 	struct Indices {
 
-		int index;
+		int vertexIndex;              
+		int texIndex;  
+		int normIndex; 
+
 	};
 
 	struct textureCoord {
@@ -38,12 +41,25 @@ protected:
 		float z;
 	};
 
+	struct Material {
+		float materialKa;
+		float materialKd;
+		float materialKs;
+		float materialNS;
+		float materialNi;
+		float materiald;
+		string textureAdress;
+
+	};
+
+	
 public:
 
 	vector<vertexPosition>		vVertexCoord;
 	vector<textureCoord>		vTextureCoord;
 	vector<Indices>				vIndices;
 	vector<vertexNormal>		vVertexNormal;
+	Material					m_Material;
 
 	
 

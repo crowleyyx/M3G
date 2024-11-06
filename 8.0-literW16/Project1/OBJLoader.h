@@ -11,18 +11,26 @@ public:
 	OBJLoader(string PATH);
 	~OBJLoader();
 
+	void readObj();
 
-public:
-	void FindVertexPosition();
-	void FindTextureCoord();
-	void FindVertexNormal();
 
+private:
+	void getVertexPosition();
+	void getTextureCoord();
+	void getVertexNormal();
+	void getIndices();
+	void getMaterialInfo();
+	void getMaterialKa();
+	void getMaterialKs();
+	void getMaterialKd();
+	void getTextureAdress();
 
 
 private:
 	string m_sPATH;
 	string currentLine;
 	Object myObject;
+
 	
 
 	
